@@ -23,8 +23,6 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Item 4
 - Item 5
 
-![image](https://github.com/lucasfregoso/osticket-prereqs/assets/144977615/bc242ae1-4598-4a1b-a2c4-cec6f66aec52)
-
 
 <h2>Installation Steps</h2>
 
