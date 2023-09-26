@@ -17,15 +17,16 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+- Step 1
+- Step 2
+- Step 3
+- Step 4
+- Step 5
 
 (Images going from left to right)
 <h2>Installation Steps</h2>
 
+Step 1
 <p>
 <img width="1545" alt="RG and VM for OsTicket" src="https://github.com/lucasfregoso/osticket-prereqs/assets/144977615/8ff3dea7-1c06-4a93-98c3-90e9983992e6">
 </p>
@@ -34,6 +35,7 @@ Our first step in creating an osTicket system we create our resource group throu
 </p>
 <br />
 
+Step 2
 <p>
 <img width="1595" alt="Screenshot 2023-09-25 at 9 49 56 PM" src="https://github.com/lucasfregoso/osticket-prereqs/assets/144977615/8addaef5-387c-4d46-ac9a-9a2c854794ab">
 
@@ -43,6 +45,7 @@ To start off, we go into control panel and under 'Programs and Features' we clic
 </p>
 <br />
 
+Step 3
 <p>
 <img width="1631" alt="Screenshot 2023-09-25 at 10 43 42 PM" src="https://github.com/lucasfregoso/osticket-prereqs/assets/144977615/fc8f877c-09a6-4215-9a72-c84d62105201">
 </p>
@@ -51,6 +54,7 @@ For the next part, we will install a few key requirements for out osTicketing Sy
 </p>
 <br />
 
+Step 4
 <p>
 <img width="1631" alt="Screenshot 2023-09-25 at 11 37 12 PM" src="https://github.com/lucasfregoso/osticket-prereqs/assets/144977615/90859a89-c128-4aa0-b50b-c11c82a4eeb5">
 </p>
@@ -59,10 +63,13 @@ Now, we open up IIS as an admin, register PHP from within the the IIS, restart i
 </p>
 <br />
 
+Step 5
 <p>
-<img width="1631" alt="Screenshot 2023-09-25 at 10 43 42 PM" src="https://github.com/lucasfregoso/osticket-prereqs/assets/144977615/fc8f877c-09a6-4215-9a72-c84d62105201">
+<img width="771" alt="Screenshot 2023-09-26 at 12 13 47 AM" src="https://github.com/lucasfregoso/osticket-prereqs/assets/144977615/07fc8e46-c92f-4750-9e52-0ba8dac20dc5">
 </p>
 <p>
 Finally, we rename our root file to ost-config.php and assign permissions on this file so that everyone is able to do anything to this file since the osTicket installer needs to interact and maanipulate with this file. To do this we go properties from this file, go to security, then to advanced, disable inheritance, and remove all permissions. Afterwards, we add new permissions and allow 'everyone' to have full control. Then, we continue setting up osTicket and install Heidi SQL, which will allow us to connect the MySQL server that we installed earlier and set up a database that the osTicket is going to use. We create the database in Heidi SQL once it's downloaded and call it 'osTicket' and fill out the remaaining info on the osTicket installer website. Lastly, we'll get a 'congratulations' text if we did it right and after this we do a clean up to make everything comes full circle and login to make that works too.
 </p>
 <br />
+Step 5 Continued
+<img width="1525" alt="Screenshot 2023-09-26 at 12 14 57 AM" src="https://github.com/lucasfregoso/osticket-prereqs/assets/144977615/08c20dd6-774c-4f87-a5bf-7a208a784696">
