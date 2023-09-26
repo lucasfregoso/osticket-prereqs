@@ -39,7 +39,7 @@ Our first step in creating an osTicket system we create our resource group throu
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+To start off, we go into control panel and under 'Programs and Features' we click on 'Turn Windows features on/off.' We then go to 'Internet Information Services' and check off the box, expand this box, expand 'World Wide Web Services', expand 'Application Development Features', and check CGI, which is what defines the environment for IIS. Then we go to 'Common HTTP Features' and make sure that everything there is checked as well. Next, we just select OK and these changes will be applied. To double check, we could just load up the default loopback address or our local host (127.0.0.1), which will bring us to the default IIS website and that lets us know we did this correctly.
 </p>
 <br />
 
