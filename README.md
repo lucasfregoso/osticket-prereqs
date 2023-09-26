@@ -23,7 +23,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Item 4
 - Item 5
 
-
+(Images going from left to right)
 <h2>Installation Steps</h2>
 
 <p>
@@ -44,7 +44,7 @@ To start off, we go into control panel and under 'Programs and Features' we clic
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1631" alt="Screenshot 2023-09-25 at 10 43 42 PM" src="https://github.com/lucasfregoso/osticket-prereqs/assets/144977615/fc8f877c-09a6-4215-9a72-c84d62105201">
 </p>
 <p>
 For the next part, we will install a few key requirements for out osTicketing System to function properly. So, from our instruction list we will install Rewrite Module by clicking on the link provided, go to 'downloads'in our files, open it up, agree to the terms/conditions, and install it. Then, we make a folder called 'PHP' on our c: drive, download 'PHP 7.3.8', onced it's downloaded we extract it into our PHP folder, and everything will get dumped into there. After this, we install both C++ Redistributable and MySQL Server.
