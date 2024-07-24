@@ -45,7 +45,13 @@ Step 2
 
 </p>
 <p>
-To start off, we go into control panel and under 'Programs and Features' we click on 'Turn Windows features on/off.' We then go to 'Internet Information Services' and check off the box, expand this box, expand 'World Wide Web Services', expand 'Application Development Features', and check CGI, which is what defines the environment for IIS. Then we go to 'Common HTTP Features' and make sure that everything there is checked as well. Next, we just select OK and these changes will be applied. To double check, we could just load up the default loopback address or our local host (127.0.0.1), which will bring us to the default IIS website and that lets us know we did this correctly.
+To begin, open the Control Panel and navigate to "Programs and Features." Click on "Turn Windows features on or off." 
+
+Next, locate "Internet Information Services", check the box, expand it, and then expand "World Wide Web Services" and "Application Development Features." 
+
+Ensure that "CGI" is checked to define the IIS environment. Then, under "Common HTTP Features", verify that all options are checked. Click "OK" to apply changes. 
+
+To confirm everything is set up correctly, open your browser and enter the default loopback address or localhost (127.0.0.1). This should display the default IIS website, indicating the setup was successful. 
 </p>
 <br />
 
