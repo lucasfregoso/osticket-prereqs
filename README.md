@@ -31,7 +31,11 @@ Step 1
 <img width="1545" alt="RG and VM for OsTicket" src="https://github.com/lucasfregoso/osticket-prereqs/assets/144977615/8ff3dea7-1c06-4a93-98c3-90e9983992e6">
 </p>
 <p>
-Our first step in creating an osTicket system we create our resource group through Azure and we do that by searching up 'Resource Groups' and create one. From there we just add a name to it and make sure it has a subscription. Then, once it gets validated we move on to creating a virtual machine and we do this by searching for 'virual machines' and fill out all the details that we need, which include virtual machine name, image, region, username/password, etc. After this, once everything is set up we will open our virtual machine through microsoft remote desktop and get started with the lab.
+Our first step in setting up an osTicket is to create a resource group in Azure. Begin by searching for "Resource Groups" and creating a new one, giving it a name and ensuring it has a subscription. 
+
+Once validated, proceed to create a virtual machine by searching for "Virtual Machines" and filling in the required details, such as the virtual machine name, image, region, username, and password. 
+
+After everything is set up, open the virtual machine using Microsoft Remote Desktop and start the lab. 
 </p>
 <br />
 
