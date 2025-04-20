@@ -60,7 +60,10 @@ Step 3
 <img width="1631" alt="Screenshot 2023-09-25 at 10 43 42 PM" src="https://github.com/lucasfregoso/osticket-prereqs/assets/144977615/fc8f877c-09a6-4215-9a72-c84d62105201">
 </p>
 <p>
-Install the Rewrite Module
+📦 Setting Up Key Requirements for the osTicket System
+To ensure our osTicket system runs smoothly, we’ll now install several essential components. Follow the steps below carefully:
+
+🔁 Install the Rewrite Module
 
 Click on the link provided to download the Rewrite Module.
 Go to your Downloads folder once the file finishes downloading.
@@ -68,7 +71,7 @@ Open the installer.
 Agree to the terms and conditions.
 Follow the prompts to complete the installation.
 
-Set Up PHP
+📂 Set Up PHP Environment 
 
 Create a new folder on your C: drive called: PHP.
 Download PHP version 7.3.8 from the official website or trusted source.
@@ -76,7 +79,7 @@ Once downloaded, extract the contents of the ZIP file.
 Move or extract all files into the C:\PHP folder.
 All PHP files should now be inside that folder.
 
-Install Required Software
+🔧 Install Required Software
 
 Download and install the Microsoft Visual C++ Redistributable (2015–2019 version recommended).
 Make sure to choose the correct version for your system (x86 or x64).
@@ -95,7 +98,45 @@ Step 4
 <img width="1631" alt="Screenshot 2023-09-25 at 11 37 12 PM" src="https://github.com/lucasfregoso/osticket-prereqs/assets/144977615/90859a89-c128-4aa0-b50b-c11c82a4eeb5">
 </p>
 <p>
-Now, we open up IIS as an admin, register PHP from within the the IIS, restart it to make sure that it is registered, and then download the osTicket file from our list of instructions. Next, we extracted and copied the 'upload' (which came from the osTickett file we downloaded) folder into c:\inetpub\www.root and then renamed the 'upload' file to 'osTicket.' After this, we go back to IIS and go to sites-->Default-->osTicket and towards the very right we click 'Browse*:80', which will bring us to the 'osTicket installer' website and means we are on the right path. After this, we go back to IIS to enable some extensions since a couple of them will not be enabled at first. So, we go back to IIS and head to sites-->Default-->osTicket and double click on PHP Manager and enable the following: php_imap.dll, php_intl.dll, php_opcache.dll. 
+⚙️ Configuring IIS and Setting Up osTicket
+Now that the core components are installed, we’ll proceed with configuring IIS and preparing osTicket for installation.
+
+🖥️ Register PHP with IIS
+
+Open IIS Manager as an administrator.
+Within IIS, register PHP by linking it to your installed PHP directory.
+Once registered, restart IIS to ensure the PHP module is recognized and active.
+
+📥 Download and Prepare osTicket
+
+Download the osTicket installation file from the provided instruction list.
+Extract the downloaded ZIP file.
+Inside the extracted folder, locate the upload directory.
+Copy the entire upload folder to:
+C:\inetpub\wwwroot
+Once copied, rename the upload folder to osTicket.
+
+🌐 Launch osTicket Installer in Browser
+
+Go back to IIS Manager.
+Navigate to:
+Sites → Default Web Site → osTicket
+On the far right-hand side of IIS, click on ‘Browse *:80’.
+This should open your web browser and take you to the osTicket installer page.
+If you see this, you’re on the right track!
+
+🔌 Enable Required PHP Extensions
+
+Back in IIS Manager, navigate again to:
+Sites → Default Web Site → osTicket
+Double-click on PHP Manager.
+
+Under the PHP extensions section, enable the following required extensions:
+
+php_imap.dll
+php_intl.dll
+php_opcache.dll
+
 </p>
 <br />
 
