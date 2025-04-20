@@ -145,7 +145,48 @@ Step 5
 <img width="771" alt="Screenshot 2023-09-26 at 12 13 47 AM" src="https://github.com/lucasfregoso/osticket-prereqs/assets/144977615/07fc8e46-c92f-4750-9e52-0ba8dac20dc5">
 </p>
 <p>
-Finally, we rename our root file to ost-config.php and assign permissions on this file so that everyone is able to do anything to this file since the osTicket installer needs to interact and maanipulate with this file. To do this we go properties from this file, go to security, then to advanced, disable inheritance, and remove all permissions. Afterwards, we add new permissions and allow 'everyone' to have full control. Then, we continue setting up osTicket and install Heidi SQL, which will allow us to connect the MySQL server that we installed earlier and set up a database that the osTicket is going to use. We create the database in Heidi SQL once it's downloaded and call it 'osTicket' and fill out the remaaining info on the osTicket installer website. Lastly, we'll get a 'congratulations' text if we did it right and after this we do a clean up to make everything comes full circle and login to make that works too.
+🛠️ Final Configuration and Setup of osTicket
+We’re almost there! Let’s finish configuring osTicket and prepare the database connection.
+
+📄 Rename and Set Permissions for the Config File
+Navigate to the osTicket directory inside:
+C:\inetpub\wwwroot\osTicket
+
+Locate the file named:
+ost-config.sample.php
+
+Rename it to:
+ost-config.php
+
+Right-click the renamed file and select Properties.
+Go to the Security tab, then click Advanced.
+Click Disable inheritance and remove all existing permissions.
+Now, click Add, choose ‘Everyone’, and grant Full Control.
+Apply and save the changes.
+
+This step is necessary to allow the osTicket installer to read from and write to the config file during setup.
+
+🧩 Complete the osTicket Web Installer
+Go back to the osTicket web installer in your browser.
+Continue the setup steps by entering the required information, including site name, admin credentials, and database details.
+
+🗃️ Install and Use HeidiSQL for Database Setup
+Download and install HeidiSQL.
+Use it to connect to the MySQL Server that was installed earlier.
+Once connected, create a new database named:
+osTicket
+
+Fill in the remaining database connection details in the osTicket web installer.
+This includes database name (osTicket), MySQL username, and password.
+
+🎉 Finish and Verify Installation
+If everything is set up correctly, you’ll see a “Congratulations” message confirming the successful installation.
+
+To wrap things up:
+
+Perform any recommended cleanup steps (e.g., removing the setup directory if prompted).
+Log in to the osTicket Admin Panel to verify everything works as expected.
+
 </p>
 <br />
 Step 5 Continued
