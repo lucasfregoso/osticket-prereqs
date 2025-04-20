@@ -31,11 +31,37 @@ Step 1
 <img width="1545" alt="RG and VM for OsTicket" src="https://github.com/lucasfregoso/osticket-prereqs/assets/144977615/8ff3dea7-1c06-4a93-98c3-90e9983992e6">
 </p>
 <p>
-Our first step in setting up an osTicket is to create a resource group in Azure. Begin by searching for "Resource Groups" and creating a new one, giving it a name and ensuring it has a subscription. 
+☁️ Setting Up Your Environment in Azure for osTicket
+Let’s begin the osTicket setup by creating the foundational components in Microsoft Azure.
 
-Once validated, proceed to create a virtual machine by searching for "Virtual Machines" and filling in the required details, such as the virtual machine name, image, region, username, and password. 
+🧱 Create a Resource Group
+Start by logging into the Azure Portal.
+In the search bar at the top, type "Resource Groups" and select it.
+Click on “+ Create” to start a new resource group.
+Give your resource group a meaningful name.
+Ensure it is tied to an active subscription.
+Click Review + Create, then Create once validation passes.
 
-After everything is set up, open the virtual machine using Microsoft Remote Desktop and start the lab. 
+💻 Create a Virtual Machine
+After your resource group is created, go back to the search bar and type "Virtual Machines".
+Click “+ Create” to start setting up a new VM.
+
+Fill in the required details:
+
+Virtual Machine Name
+Region (choose the region closest to you)
+Image (e.g., Windows Server 2019)
+Username and Password (you’ll use these to log in later)
+Make sure all configurations are correct.
+Click Review + Create, then Create once Azure validates your settings.
+
+🖥️ Connect to the Virtual Machine
+Once the virtual machine is deployed, go to its overview page.
+Click on “Connect” and select RDP (Remote Desktop Protocol).
+Download the RDP file provided by Azure.
+Open the file using Microsoft Remote Desktop.
+Enter your login credentials and start the virtual lab environment.
+
 </p>
 <br />
 
@@ -45,13 +71,33 @@ Step 2
 
 </p>
 <p>
-To begin, open the Control Panel and navigate to "Programs and Features." Click on "Turn Windows features on or off." 
+🌐 Enabling IIS on Windows
+Before installing osTicket, we need to set up the Internet Information Services (IIS) environment properly.
 
-Next, locate "Internet Information Services", check the box, expand it, and then expand "World Wide Web Services" and "Application Development Features." 
+⚙️ Enable IIS and Required Features
+Open the Control Panel.
+Navigate to Programs → Programs and Features.
+On the left-hand side, click “Turn Windows features on or off."
 
-Ensure that "CGI" is checked to define the IIS environment. Then, under "Common HTTP Features", verify that all options are checked. Click "OK" to apply changes. 
+📂 Configure IIS Components
+In the Windows Features window, locate and check the box for “Internet Information Services.”
+Expand “Internet Information Services” → “World Wide Web Services” → “Application Development Features.”
+Ensure “CGI” is checked — this is essential for defining the IIS environment.
+Next, under “Common HTTP Features,” make sure the following are all checked:
+Static Content
+Default Document
+Directory Browsing
+HTTP Errors
+HTTP Redirection
+Click “OK” to apply and install the features.
 
-To confirm everything is set up correctly, open your browser and enter the default loopback address or localhost (127.0.0.1). This should display the default IIS website, indicating the setup was successful. 
+✅ Verify IIS Installation
+Once installation is complete:
+
+Open your preferred web browser.
+Enter either localhost or the loopback IP 127.0.0.1 in the address bar.
+If IIS is installed correctly, you’ll see the default IIS welcome page, confirming your setup was successful.
+
 </p>
 <br />
 
