@@ -60,7 +60,33 @@ Step 3
 <img width="1631" alt="Screenshot 2023-09-25 at 10 43 42 PM" src="https://github.com/lucasfregoso/osticket-prereqs/assets/144977615/fc8f877c-09a6-4215-9a72-c84d62105201">
 </p>
 <p>
-For the next part, we will install a few key requirements for out osTicketing System to function properly. So, from our instruction list we will install Rewrite Module by clicking on the link provided, go to 'downloads'in our files, open it up, agree to the terms/conditions, and install it. Then, we make a folder called 'PHP' on our c: drive, download 'PHP 7.3.8', onced it's downloaded we extract it into our PHP folder, and everything will get dumped into there. After this, we install both C++ Redistributable and MySQL Server.
+Install the Rewrite Module
+
+Click on the link provided to download the Rewrite Module.
+Go to your Downloads folder once the file finishes downloading.
+Open the installer.
+Agree to the terms and conditions.
+Follow the prompts to complete the installation.
+
+Set Up PHP
+
+Create a new folder on your C: drive called: PHP.
+Download PHP version 7.3.8 from the official website or trusted source.
+Once downloaded, extract the contents of the ZIP file.
+Move or extract all files into the C:\PHP folder.
+All PHP files should now be inside that folder.
+
+Install Required Software
+
+Download and install the Microsoft Visual C++ Redistributable (2015–2019 version recommended).
+Make sure to choose the correct version for your system (x86 or x64).
+
+Next, download the latest stable version of MySQL Server.
+Run the installer and go through the setup process.
+Set a root password when prompted.
+Note any important configuration details such as the port number.
+Ensure the MySQL service is running after installation.
+
 </p>
 <br />
 
